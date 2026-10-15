@@ -1,0 +1,20 @@
+{
+    "true_negative": 763,
+    "false_positive": 272,
+    "false_negative": 71,
+    "true_positive": 303,
+    "matrix": [
+        [
+            763,
+            272
+        ],
+        [
+            71,
+            303
+        ]
+    ],
+    "labels": [
+        "No Churn",
+        "Churn"
+    ]
+}

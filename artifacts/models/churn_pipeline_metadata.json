@@ -1,0 +1,30 @@
+{
+    "model_name": "End-to-End Tuned Random Forest",
+    "model_version": "1.0.0",
+    "algorithm": "RandomForestClassifier",
+    "task": "Binary Classification",
+    "target": "Churn",
+    "positive_class": "Churn",
+    "negative_class": "No Churn",
+    "decision_threshold": 0.47999999999999987,
+    "model_selection_metric": "ROC-AUC",
+    "threshold_selection_metric": "F1",
+    "test_size": 0.2,
+    "random_state": 42,
+    "features_source": "IBM Telco Customer Churn",
+    "status": "Production",
+    "artifacts": {
+        "pipeline": "churn_pipeline.joblib",
+        "metrics": "end_to_end_pipeline_metrics.csv",
+        "confusion_matrix": "confusion_matrix.json",
+        "roc_curve": "roc_curve.json"
+    },
+    "metrics": {
+        "accuracy": 0.7565649396735273,
+        "precision": 0.5269565217391304,
+        "recall": 0.8101604278074866,
+        "f1": 0.6385669125395153,
+        "roc_auc": 0.8420083184789067,
+        "pr_auc": 0.6519788988185089
+    }
+}

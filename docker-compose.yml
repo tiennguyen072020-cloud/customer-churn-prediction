@@ -1,0 +1,70 @@
+services:
+
+  # Backend
+
+  backend:
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name:
+      customer-churn-backend
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./artifacts/predictions:/app/artifacts/predictions
+
+    restart:
+      unless-stopped
+
+    healthcheck:
+
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health')"
+        ]
+
+      interval:
+        30s
+
+      timeout:
+        5s
+
+      retries:
+        3
+
+      start_period:
+        15s
+
+
+  # Frontend
+
+  frontend:
+
+    build:
+      context:
+        ./frontend/churn-dashboard
+
+      dockerfile:
+        Dockerfile
+
+    container_name:
+      customer-churn-frontend
+
+    ports:
+      - "5173:80"
+
+    depends_on:
+
+      backend:
+        condition:
+          service_healthy
+
+    restart:
+      unless-stopped

@@ -1,0 +1,100 @@
+{
+    "model_name": "End-to-End Tuned Random Forest",
+    "algorithm": "RandomForestClassifier",
+    "method": "Random Forest impurity-based feature importance",
+    "total_transformed_features": 64,
+    "total_business_features": 35,
+    "top_n": 15,
+    "features": [
+        {
+            "rank": 1,
+            "feature": "Contract",
+            "importance": 0.16596019699194847,
+            "percentage": 16.59601969919485
+        },
+        {
+            "rank": 2,
+            "feature": "is_long_term_contract",
+            "importance": 0.10582124133045875,
+            "percentage": 10.582124133045879
+        },
+        {
+            "rank": 3,
+            "feature": "charges_per_service",
+            "importance": 0.06073967191924824,
+            "percentage": 6.073967191924826
+        },
+        {
+            "rank": 4,
+            "feature": "tenure",
+            "importance": 0.05893671038321282,
+            "percentage": 5.893671038321283
+        },
+        {
+            "rank": 5,
+            "feature": "OnlineSecurity",
+            "importance": 0.05816936485675235,
+            "percentage": 5.816936485675236
+        },
+        {
+            "rank": 6,
+            "feature": "InternetService",
+            "importance": 0.055836972678528586,
+            "percentage": 5.58369726785286
+        },
+        {
+            "rank": 7,
+            "feature": "TechSupport",
+            "importance": 0.04988057606226791,
+            "percentage": 4.988057606226793
+        },
+        {
+            "rank": 8,
+            "feature": "customer_value",
+            "importance": 0.04422385532658885,
+            "percentage": 4.422385532658886
+        },
+        {
+            "rank": 9,
+            "feature": "MonthlyCharges",
+            "importance": 0.04269217431913241,
+            "percentage": 4.269217431913241
+        },
+        {
+            "rank": 10,
+            "feature": "TotalCharges",
+            "importance": 0.04256511167765806,
+            "percentage": 4.256511167765806
+        },
+        {
+            "rank": 11,
+            "feature": "avg_monthly_spend",
+            "importance": 0.03940144412782492,
+            "percentage": 3.9401444127824927
+        },
+        {
+            "rank": 12,
+            "feature": "tenure_group",
+            "importance": 0.035740723102306374,
+            "percentage": 3.574072310230638
+        },
+        {
+            "rank": 13,
+            "feature": "PaymentMethod",
+            "importance": 0.026725873409189763,
+            "percentage": 2.672587340918977
+        },
+        {
+            "rank": 14,
+            "feature": "is_electronic_check",
+            "importance": 0.024700010460210257,
+            "percentage": 2.4700010460210264
+        },
+        {
+            "rank": 15,
+            "feature": "is_new_customer",
+            "importance": 0.023093501734886644,
+            "percentage": 2.3093501734886646
+        }
+    ]
+}
